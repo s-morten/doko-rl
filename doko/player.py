@@ -4,6 +4,7 @@ class DokoPlayer:
         self.player_id = player_id
         self.dealer = False
         self.hand = []
+        self.tricks = []
 
     def set_dealer(self, is_dealer):
         self.dealer = is_dealer
