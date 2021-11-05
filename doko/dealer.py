@@ -14,12 +14,13 @@ class DokoDealer:
 
     def init_deck(self):
         deck = []
-        card_info = DokoCard.info
+        suits = DokoCard.valid_suit
+        ranks = DokoCard.valid_rank
 
-        for color in card_info['color']:
-            for num in card_info['number']:
-                deck.append(DokoCard(color, num))
-                deck.append(DokoCard(color, num))
+        for suit in suits:
+            for rank in ranks:
+                deck.append(DokoCard(suit, rank))
+                deck.append(DokoCard(suit, rank))
 
         return deck
 
